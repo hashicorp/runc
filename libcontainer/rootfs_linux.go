@@ -42,6 +42,12 @@ func needsSetupDev(config *configs.Config) bool {
 // finalizeRootfs after this function to finish setting up the rootfs.
 func prepareRootfs(pipe io.ReadWriter, iConfig *initConfig) (err error) {
 	config := iConfig.Config
+	if config.Rootfs == "/" {
+		if err := unix.Chdir(config.Rootfs); err != nil {
+			return newSystemErrorWithCausef(err, "changing dir to %q", config.Rootfs)
+		}
+		return nil
+	}
 	if err := prepareRoot(config); err != nil {
 		return newSystemErrorWithCause(err, "preparing rootfs")
 	}
@@ -129,6 +135,9 @@ func prepareRootfs(pipe io.ReadWriter, iConfig *initConfig) (err error) {
 // finalizeRootfs sets anything to ro if necessary. You must call
 // prepareRootfs first.
 func finalizeRootfs(config *configs.Config) (err error) {
+	if config.Rootfs == "/" {
+		return nil
+	}
 	// remount dev as ro if specified
 	for _, m := range config.Mounts {
 		if libcontainerUtils.CleanPath(m.Destination) == "/dev" {
