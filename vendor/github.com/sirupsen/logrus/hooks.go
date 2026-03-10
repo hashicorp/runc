@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2014, 2018
+// SPDX-License-Identifier: Apache-2.0
+
 package logrus
 
 // A hook to be fired when logging on the logging levels returned from

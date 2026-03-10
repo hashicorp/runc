@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2014, 2018
+// SPDX-License-Identifier: Apache-2.0
+
 // +build linux,mips linux,mipsle linux,mips64 linux,mips64le
 
 package main

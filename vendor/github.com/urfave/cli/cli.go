@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2014, 2018
+// SPDX-License-Identifier: Apache-2.0
+
 // Package cli provides a minimal framework for creating and organizing command line
 // Go applications. cli is designed to be easy to understand and write, the most simple
 // cli application can be written as follows:

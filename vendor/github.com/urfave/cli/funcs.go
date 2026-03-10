@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2014, 2018
+// SPDX-License-Identifier: Apache-2.0
+
 package cli
 
 // BashCompleteFunc is an action to execute when the bash-completion flag is set

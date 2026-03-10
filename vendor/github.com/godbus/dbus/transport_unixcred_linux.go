@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2014, 2018
+// SPDX-License-Identifier: Apache-2.0
+
 // The UnixCredentials system call is currently only implemented on Linux
 // http://golang.org/src/pkg/syscall/sockcmsg_linux.go
 // https://golang.org/s/go1.4-syscall
