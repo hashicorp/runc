@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2014, 2018
+// SPDX-License-Identifier: Apache-2.0
+
 // Package units provides helper function to parse and print size and time units
 // in human-readable format.
 package units

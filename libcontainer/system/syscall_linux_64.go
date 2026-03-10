@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2014, 2018
+// SPDX-License-Identifier: Apache-2.0
+
 // +build linux
 // +build arm64 amd64 mips mipsle mips64 mips64le ppc ppc64 ppc64le s390x
 

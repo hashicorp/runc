@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2014, 2018
+// SPDX-License-Identifier: Apache-2.0
+
 // Package nl has low level primitives for making Netlink calls.
 package nl
 

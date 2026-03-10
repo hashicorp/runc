@@ -1,4 +1,7 @@
 #!/bin/bash
+# Copyright IBM Corp. 2014, 2018
+# SPDX-License-Identifier: Apache-2.0
+
 
 # Root directory of integration tests.
 INTEGRATION_ROOT=$(dirname "$(readlink -f "$BASH_SOURCE")")

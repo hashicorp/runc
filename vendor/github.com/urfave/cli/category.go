@@ -1,3 +1,6 @@
+// Copyright IBM Corp. 2014, 2018
+// SPDX-License-Identifier: Apache-2.0
+
 package cli
 
 // CommandCategories is a slice of *CommandCategory.
